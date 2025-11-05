@@ -1,0 +1,90 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPoFONAS3EZUcJG72/ELqdR",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/25059710-bit/data-science-W1/blob/main/tutorial03ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Fe4BcoKVgLBJ",
+        "outputId": "e757226d-8c70-423f-afb3-b07e4f2b34fc"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[1 2]\n",
+            " [3 4]]\n",
+            "[[0.61638233 0.38845852 0.45863137 0.39802579]\n",
+            " [0.72316058 0.8662146  0.10259198 0.51087994]\n",
+            " [0.09849373 0.73351714 0.79121639 0.59025363]]\n",
+            "[[1. 1. 1.]\n",
+            " [1. 1. 1.]\n",
+            " [1. 1. 1.]]\n",
+            "[[0. 0. 0. 0.]\n",
+            " [0. 0. 0. 0.]]\n",
+            "[[0.84804881 0.88684785 0.97404463 0.69181947 0.95919219 0.49790154]\n",
+            " [0.13732365 0.14295716 0.09028307 0.78063388 0.58799812 0.95446382]\n",
+            " [0.10153531 0.76713305 0.13563957 0.17195166 0.66039904 0.0835944 ]]\n",
+            "[[1.04766269 1.76787825]\n",
+            " [0.73692397 1.38314274]\n",
+            " [0.61451638 1.25685252]\n",
+            " [1.14783132 2.1057851 ]]\n"
+          ]
+        }
+      ],
+      "source": [
+        "1.\n",
+        "import numpy as np\n",
+        "arr_2x2 = np.array([[1, 2],\n",
+        "                    [3, 4]])\n",
+        "print(arr_2x2)\n",
+        "2.\n",
+        "rand_3x4 = np.random.rand(3,4)\n",
+        "print(rand_3x4)\n",
+        "3.\n",
+        "ones = np.ones((3,3))\n",
+        "zeros = np.zeros((2,4))\n",
+        "print(ones)\n",
+        "print(zeros)\n",
+        "4.\n",
+        "rand_6x3 = np.random.rand(6,3)\n",
+        "transposed = rand_6x3.T\n",
+        "print(transposed)\n",
+        "5.\n",
+        "A = np.random.rand(4,5)\n",
+        "B = np.random.rand(5,2)\n",
+        "C = np.dot(A, B)\n",
+        "print(C)\n"
+      ]
+    }
+  ]
+}
